@@ -8,7 +8,7 @@ Questions or suggestions are welcome.
 
 # Exercises
 
-## [K-Nearest Neighbors](../k_nearest_neighbors)
+## [K-Nearest Neighbors](../src/k_nearest_neighbors)
 
 This project implements the K-Nearest Neighbors (KNN) algorithm, a machine learning method used for classification.
 
