@@ -1,3 +1,7 @@
+from pandas.core.frame import DataFrame
+from pandas.core.series import Series
+
+
 valid_metrics = ["euclidean", "manhattan", "minkowski"]
 valid_weights = ["distance"]
 
@@ -30,4 +34,9 @@ class MyKnn:
             )
             raise Exception
 
-        self.p = p
+    def fit(self, data: DataFrame, targets: Series):
+        for index, row in data.iterrows():
+            self.training_points = [index, row.values, targets[index]]
+
+    def predict(self):
+        return 0
